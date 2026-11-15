@@ -22,7 +22,7 @@ func (m FakeModel) Decide(objective string, observations []string) Decision {
 	}
 
 	return Decision{
-		Final: "The payment pod is unhealthy.\nStatus:" +
+		Final: "The payment pod is unhealthy.\nStatus: " +
 			observations[0] + "\nLogs: " + observations[1],
 	}
 }
